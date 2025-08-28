@@ -1,5 +1,7 @@
-package demo.soieu.member;
+package demo.soieu.member.controller;
 
+import demo.soieu.member.entity.Member;
+import demo.soieu.member.service.MemberService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,5 +1,7 @@
-package demo.soieu.member;
+package demo.soieu.member.service;
 
+import demo.soieu.member.entity.Member;
+import demo.soieu.member.repository.MemberRepository;
 import org.springframework.stereotype.Service;
 
 @Service

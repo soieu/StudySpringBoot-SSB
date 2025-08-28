@@ -3,6 +3,9 @@ package demo.soieu.member;
 import java.util.ArrayList;
 import java.util.List;
 
+import demo.soieu.member.entity.Member;
+import demo.soieu.member.repository.MemberRepository;
+import demo.soieu.member.service.MemberService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -25,14 +28,7 @@ class MemberServiceTest {
     private EntityManager entityManager;
 
     @Test
-    void deleteAllRecords() {
-        memberRepository.deleteAll();
-
-        assertEquals(0, memberRepository.count());
-    }
-
-    @Test
-    void insert1MillionRecordsWithSmallTransactions() {
+    void insertRecords() {
         int batchSize = 1000;
         int transactionSize = 10000;
         int totalRecords = 900_000;

@@ -1,4 +1,4 @@
-package demo.soieu.member;
+package demo.soieu.member.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

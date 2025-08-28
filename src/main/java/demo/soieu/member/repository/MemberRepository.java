@@ -1,7 +1,8 @@
-package demo.soieu.member;
+package demo.soieu.member.repository;
 
 import java.util.UUID;
 
+import demo.soieu.member.entity.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface MemberRepository extends JpaRepository<Member, UUID> {
